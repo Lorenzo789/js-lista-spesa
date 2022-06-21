@@ -9,25 +9,34 @@ const listItemStore = [
     'spinach',
     'peas',
     'pasta',
-    'venus rice'
+    'venus rice',
+    'air conditioner'
 ]
 
 //inserire tot elementi li nell'html
 //creare un ciclo for 
 //farlo con un ciclo while
 
+// ? CICLO WHILE ? \\
+
 const cartItemShop = document.getElementById('list-shop');
 
+let index = 0;
 
-// let index = 0;
+while (index < listItemStore.length) {
+    
+    const newItem = document.createElement('li');
 
-// while (index < listItemStore.length) {
+    newItem.classList.add('pad-li');
+
+    cartItemShop.append(newItem);
+
+    newItem.innerHTML = (listItemStore[index]);
     
-    //     cartItemShop.append(newItem);
-    
-    //     index++;
-    // 
+    index++;
 }
+
+// ? CICLO WHILE ? \\
     
 
 
@@ -46,3 +55,5 @@ const cartItemShop = document.getElementById('list-shop');
 //     newItem.innerHTML = (listItemStore[index]);
 
 // }
+
+// ! CICLO FOR ! \\
